@@ -225,6 +225,19 @@ header{
 	border-radius:15px;
 	transform: scale(1.2);
 }
+.port-ex:hover p{
+	opacity:1;
+	transition:all 0.2s ease;
+}
+.port-ex p{
+	color:white;
+	background-color:rgba(0,0,0,0.5);
+	opacity:0;
+	top:40%;
+	left:50%;
+	position:absolute;
+	transform: translate(-50%, -50%);\
+}
 /* CONTACT */
 #contact{
 	background-color:#3b3f3f;
