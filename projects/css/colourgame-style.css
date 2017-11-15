@@ -9,14 +9,13 @@ body{
 	background-color:#cccccc;
 }
 #bgColour{
-	right:0;
 	display:inline-block;
 	background-color:grey;
 	border:2px solid black;
 	padding:0px 5px 0px 5px;
 	position:absolute;
 	top:0;
-	left:0;
+	right:0;
 	color:white;
 }
 #colourPicker{
