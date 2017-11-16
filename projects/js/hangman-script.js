@@ -37,7 +37,7 @@ $(document).ready(function () {
 		
 	]
 	function start(){
-		$('body').html('<header><h1>Hangman<h1><h3>Guess the word<h3></header><div id="main"><div id="popUpBox"><div id="popUpText"></div></div><div id="lines"></div><div id="inputArea"><input type="text" id="guess"><input type="submit" id="enter"></div><div id="bottom"><div id="incorrectGuesses"><p>Incorrect Guesses: </p><p id="incGuessLetter"></p></div><div id="hangmanLives"><p>Life</p><div id="display"><p id="hangmanDisplay"></p></div></div></div></div><footer><h6>Coded by Emily G</h6></footer>');
+		$('body').html('<a href="https://emilyrb.github.io" style="border:3px solid black;width:70px;height:20px;position:absolute;top:0;left:0;">HOME</a><header><h1>Hangman</h1><h3>Guess the word</h3></header><div id="main"><div id="popUpBox"><div id="popUpText"></div></div><div id="lines"></div><div id="inputArea"><input type="text" id="guess"><input type="submit" id="enter"></div><div id="bottom"><div id="incorrectGuesses"><p>Incorrect Guesses: </p><p id="incGuessLetter"></p></div><div id="hangmanLives"><p>Life</p><div id="display"><p id="hangmanDisplay"></p></div></div></div></div><footer><h6>Coded by Emily G</h6></footer>');
 		theChosenWord = randomWordList[Math.floor((Math.random() * randomWordList.length))]
 		numLines = [];
 		
