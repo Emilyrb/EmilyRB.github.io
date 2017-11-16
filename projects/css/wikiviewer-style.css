@@ -1,0 +1,87 @@
+html, body { 
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background-color:#f2f2f2;
+	color:black;
+	text-align:center;
+}
+#main{
+	display:flex;
+	height:80%;
+}
+#leftColumn{
+	float:left;
+	width:70%;
+	background-color:lightblue;
+	height:100%;
+}
+input[type=search]{
+	padding:10px;
+}
+input[type=search]:focus{
+	outline:none;
+	
+}
+#submit{
+	background-color:green;
+	color:white;
+	display:inline-block;
+	border-radius: 0px 20% 20% 0px;
+	padding:10px;
+}
+#searchResults{
+	margin:15px;
+	height:60%;
+	overflow: auto;
+}
+.resultsBox{
+	background-color:#ffccff;
+	text-align:left;
+	display:inline-block;
+	width:90%;
+	margin:10px;
+	padding:0px 20px 0px 20px;
+	color:black;
+	border-left:5px solid #ffccff;
+}
+.resultsBox:hover{
+	border-left:5px solid black;
+	cursor:pointer;
+}
+.resultsBox h3{
+	font-size:20px;
+	font:underline;
+}
+#randomPage{
+	margin:10px;
+	border-radius:10px;
+	background-color:darkblue;
+	display: inline-block;
+	padding:0px 10px 0px 10px;
+	color:white;
+	margin-top:-5px;
+}
+#randomPage:hover{
+	cursor:pointer;
+}
+#separate{
+	width:1%;
+	border-left:2px solid gray;
+	border-right:2px solid gray;
+	cursor:col-resize;
+}
+#rightColumn{
+	float:right;
+	width:29%;
+	height:100%;
+	background-color:black;
+}
+#wikiFrame{
+	height:100%;
+	width:100%;
+}
