@@ -1,0 +1,90 @@
+body,html{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-family:arial;
+	font-size:20px;
+	display: flex;
+}
+.section{
+	z-index:2;
+	display: flex;
+	justify-content: center;
+	width:100%;
+	height:100%;
+	background-color:blue;
+	text-align:center;
+	position:relative;
+}
+.info{
+	align-self: center;
+	width: 150px;
+	height: 150px;
+}
+.hexDisplay{
+	display:inline-block;
+	padding:10px;
+	cursor:pointer;
+}
+.newColour{
+	display:inline-block;
+	background-color:grey;
+	padding:10px;
+	opacity:0.5;
+	cursor:pointer;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+#top{
+	z-index:4;
+	top:0;
+	left:0;
+	font-size:100px;
+	position:absolute;
+	color:#28c941;
+}
+#under{
+	z-index:3;
+	top:7px;
+	left:7px;
+	font-size:100px;
+	position:absolute;
+	color:#1d952f;
+	text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+}
+#top:active{
+	top:5px;
+	left:5px;
+}
+.fa-minus-circle{
+	z-index:3;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	font-size:30px;
+	color:red;
+	text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+	cursor:pointer;
+}
+.fa-minus-circle:active{
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+	cursor:pointer;
+}
+#me{
+	z-index:5;
+	position:fixed;
+	bottom:0;
+	left:0;
+}
+#white{
+	top:50%;
+	left:40%;
+	text-align:center;
+	z-index:1;
+	position:absolute;
+}
