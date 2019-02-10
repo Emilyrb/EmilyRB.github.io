@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+    <script type='text/javascript' src='script.js'></script>
+</head>
+<body>
+	<div class="cloudSpace">
+		<i class="fa fa-cloud" aria-hidden="true"></i>
+	</div>
+	<div id="header"><h1>Weather App</h1></div>
+	<div id="main">
+		<div id="mainTop">
+			<div id="boxTemp">
+				<h3>IT IS</h3>
+				<h1 id="theTemp"></h1>
+				<h3>in</h2>
+				<h1 id="theTown"></h1>
+				<div id="btmInfo">
+					<div id="theHumidBox">
+						<div id="theHumid"></div>
+						<div>Humidity</div>
+					</div>
+					<div id="theMinBox">
+						<div id="theMin"></div>
+						<div>Min</div>
+					</div>
+					<div id="theMaxBox">
+						<div id="theMax"></div>
+						<div>Max</div>
+					</div>
+				</div>
+			</div>
+			<div id="boxHistory">
+				<div id="rightArrow">
+					>
+				</div>
+				<div id="leftArrow">
+					<
+				</div>
+				<div id="slideOne">
+					<p id="dayOne">
+						<div class="sideBarHumidStats">
+							<div id="theHumidityBoxSide1"></div>
+							<div id="humText1"></div>
+						</div>
+						<div class="sideBarMinStats">
+							<div id="theMinBoxSide1"></div>
+							<div id="minText1"></div>
+						</div>
+						<div class="sideBarMaxStats">
+							<div id="theMaxBoxSide1"></div>
+							<div id="maxText1"></div>
+						</div>
+					</p>
+					<p id="dayTwo">
+						<div class="sideBarHumidStats">
+							<div id="theHumidityBoxSide2"></div>
+							<div id="humText2"></div>
+						</div>
+						<div class="sideBarMinStats">
+							<div id="theMinBoxSide2"></div>
+							<div id="minText2"></div>
+						</div>
+						<div class="sideBarMaxStats">
+							<div id="theMaxBoxSide2"></div>
+							<div id="maxText2"></div>
+						</div>
+					</p>
+					<p id="dayThree">
+						<div class="sideBarHumidStats">
+							<div id="theHumidityBoxSide3"></div>
+							<div id="humText3"></div>
+						</div>
+						<div class="sideBarMinStats">
+							<div id="theMinBoxSide3"></div>
+							<div id="minText3"></div>
+						</div>
+						<div class="sideBarMaxStats">
+							<div id="theMaxBoxSide3"></div>
+							<div id="maxText3"></div>
+						</div>
+					</p>
+				</div>
+				<div id="slideTwo">
+					<p id="dayFour">
+						<div class="sideBarHumidStats">
+							<div id="theHumidityBoxSide4"></div>
+							<div id="humText4"></div>
+						</div>
+						<div class="sideBarMinStats">
+							<div id="theMinBoxSide4"></div>
+							<div id="minText4"></div>
+						</div>
+						<div class="sideBarMaxStats">
+							<div id="theMaxBoxSide4"></div>
+							<div id="maxText4"></div>
+						</div>
+					</p>
+					<p id="dayFive">
+						<div class="sideBarHumidStats">
+							<div id="theHumidityBoxSide5"></div>
+							<div id="humText5"></div>
+						</div>
+						<div class="sideBarMinStats">
+							<div id="theMinBoxSide5"></div>
+							<div id="minText5"></div>
+						</div>
+						<div class="sideBarMaxStats">
+							<div id="theMaxBoxSide5"></div>
+							<div id="maxText5"></div>
+						</div>
+					</p>
+					<p id="daySix">
+						<div class="sideBarHumidStats">
+							<div id="theHumidityBoxSide6"></div>
+							<div id="humText6"></div>
+						</div>
+						<div class="sideBarMinStats">
+							<div id="theMinBoxSide6"></div>
+							<div id="minText6"></div>
+						</div>
+						<div class="sideBarMaxStats">
+							<div id="theMaxBoxSide6"></div>
+							<div id="maxText6"></div>
+						</div>
+					</p>
+					<p id="daySeven">
+						<div class="sideBarHumidStats">
+							<div id="theHumidityBoxSide7"></div>
+							<div id="humText7"></div>
+						</div>
+						<div class="sideBarMinStats">
+							<div id="theMinBoxSide7"></div>
+							<div id="minText7"></div>
+						</div>
+						<div class="sideBarMaxStats">
+							<div id="theMaxBoxSide7"></div>
+							<div id="maxText7"></div>
+						</div>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="mainBtm">
+			<div id="boxSwitch">
+				<div id="tempC">C</div>
+				<div id="tempF">F</div>
+			</div>
+			<div id="boxCity">
+				<p id="searchText">Choose a location</p>
+				<p><div id="searchBox"><input type="textbox" id="search"/><div id="submit">Submit</div></div></p>
+			</div>
+		</div>
+	</div>
+	<div id="footer"><h4>Coded by Emily G</h4></div>
+</body>
+</html>
+
