@@ -4,7 +4,7 @@ html {
 }
 body{
 	text-align:center;
-	background-image:url('pathInTheWoods.jpg');
+	background-image:url('../img/pathInTheWoods.jpg');
 	background-size:cover;
 	font-family: 'Cabin', sans-serif;
 }
