@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var streamers = ["OgamingSC2", "freecodecamp", "Trobled", "Tiedie58", "BrenyBeast", "Blankmediagames","ESL_SC2","fake123channel213"];
+	var streamers = ["freecodecamp", "Tiedie58","ESL_SC2","OgamingSC2"];
 	var startLink = 'https://wind-bow.gomix.me/twitch-api/streams/';
 	var endLink = '?callback=?';
 	var twitchStreamName;
