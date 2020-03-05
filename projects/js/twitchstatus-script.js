@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var streamers = ["freecodecamp", "Tiedie58","ESL_SC2","OgamingSC2"];
+	var streamers = ["freecodecamp", "cretetion","ESL_SC2","OgamingSC2"];
 	var startLink = 'https://wind-bow.gomix.me/twitch-api/streams/';
 	var endLink = '?callback=?';
 	var twitchStreamName;
@@ -9,12 +9,11 @@ $(document).ready(function () {
 	function offlineTwitchJSON(url) {
 		$.getJSON( url, function( data ) {
 			if (data.status == 404){
-				$('#rightInfoBox').append('<div class="row"><div class="statusOff"></div><div class="profPic"><img src=""></div><div class="username"><h2>'+ data.error +'</h2></div><div class="streamTitle"><h3>' + data.message + '</h3></div></div>')
+				$('#rightInfoBox').append('<div class="row"><div class="statusOff"></div><div class="username"><h2>'+ data.error +'</h2></div><div class="streamTitle"><h3>' + data.message + '</h3></div></div>')
 				return false;
 			}
-			var logo = data.logo;
 			var display_name = data.display_name;
-			$('#rightInfoBox').append('<div class="row"><div class="statusOff"></div><div class="profPic"><img src="' + logo + '"></div><div class="username"><a href="https://www.twitch.tv/'+display_name+'"><h2>'+ display_name +'</h2></a></div><div class="streamTitle"><h3>Offline</h3></div></div>')
+			$('#rightInfoBox').append('<div class="row"><div class="statusOff"></div><div class="username"><a href="https://www.twitch.tv/'+display_name+'"><h2>'+ display_name +'</h2></a></div><div class="streamTitle"><h3>Offline</h3></div></div>')
 			return false;
 		});
 	}
@@ -33,9 +32,8 @@ $(document).ready(function () {
 			} else {
 				twitchStreamName = data.stream.channel.status; 
 			} //append online streamer data
-			var logo = data.stream.channel.logo;
 			var display_name = data.stream.channel.display_name;
-			$('#rightInfoBox').append('<div class="row"><div class="statusOn"></div><div class="profPic"><img src="'+ logo +'"></div><div class="username"><a href="https://www.twitch.tv/'+display_name+'"><h2>'+ display_name +'</h2></a></div><div class="streamTitle"><h3>' + twitchStreamName + '</h3></div></div>')
+			$('#rightInfoBox').append('<div class="row"><div class="statusOn"></div><div class="username"><a href="https://www.twitch.tv/'+display_name+'"><h2>'+ display_name +'</h2></a></div><div class="streamTitle"><h3>' + twitchStreamName + '</h3></div></div>')
 		});
 	}
 	
