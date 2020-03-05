@@ -399,7 +399,7 @@ $(document).ready(function () {
 		theUnits='Celcius';
 		units = '&units=metric';
 		tempJSON(api+city+apikey+units);
-		tempJSONSideBar("http://api.openweathermap.org/data/2.5/forecast/daily?" + city + "&cnt=7" + apikey + units);
+		tempJSONSideBar("https://api.openweathermap.org/data/2.5/forecast/daily?" + city + "&cnt=7" + apikey + units);
 		$("#tempC").css("background-color","green");
 		$("#tempF").css("background-color","gray");
 	});
@@ -408,7 +408,7 @@ $(document).ready(function () {
 		theUnits='Farenheit';
 		units = '&units=imperial';
 		tempJSON(api+city+apikey+units);
-		tempJSONSideBar("http://api.openweathermap.org/data/2.5/forecast/daily?" + city + "&cnt=7" + apikey + units);
+		tempJSONSideBar("https://api.openweathermap.org/data/2.5/forecast/daily?" + city + "&cnt=7" + apikey + units);
 		$("#tempC").css("background-color","gray");
 		$("#tempF").css("background-color","green");
 	});
@@ -416,7 +416,7 @@ $(document).ready(function () {
 	$('#submit').click(function(){
 		city = ('q=' + $('#search').val());
 		tempJSON(api+city+apikey+units);
-		tempJSONSideBar("http://api.openweathermap.org/data/2.5/forecast/daily?" + city + "&cnt=7" + apikey + units);
+		tempJSONSideBar("https://api.openweathermap.org/data/2.5/forecast/daily?" + city + "&cnt=7" + apikey + units);
 	});
 	/* insert city box*/
 	$('#searchText').click(function(){
