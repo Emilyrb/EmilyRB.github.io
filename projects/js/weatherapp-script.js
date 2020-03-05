@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-	var api='http://api.openweathermap.org/data/2.5/weather?';
+	var api='https://api.openweathermap.org/data/2.5/weather?';
 	var apikey='&APPID=8c717dcf78dc23081f1047eb61fd3681';
 	var city = 'q=Brisbane';
 	var units = '&units=metric';
