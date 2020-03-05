@@ -385,7 +385,7 @@ $(document).ready(function () {
 			}
 		});
 	};
-	tempJSONSideBar("http://api.openweathermap.org/data/2.5/forecast/daily?" + city + "&cnt=7" + apikey + units);
+	tempJSONSideBar("https://api.openweathermap.org/data/2.5/forecast/daily?" + city + "&cnt=7" + apikey + units);
 	
 	/* Deciding whether units on screen should say celcius or farenheit*/
 	if (units.match(/me/gi)){
